@@ -1,0 +1,20 @@
+.store-policy {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+.store-policy-content {
+    height: auto;
+    max-width: 800px;
+}
+
+.store-policy-content  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}

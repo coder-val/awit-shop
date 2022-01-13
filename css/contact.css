@@ -1,0 +1,163 @@
+.contact {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 0;
+    position: relative;
+}
+
+.contact-content {
+    height: auto;
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.contact-content .columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.col-1 ul li, .col-2 ul li, .col-3 ul li {
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+.col-1 ul li a, .col-2 ul li a, .col-3 ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 300ms ease-in-out;
+}
+
+.col-1 ul li a:hover, .col-2 ul li a:hover, .col-3 ul li a:hover {
+    color: rgb(117, 117, 117);
+}
+
+.contact-content .email {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.email h4{
+    font-weight: normal;
+}
+
+.email label {
+    color: rgb(117, 117, 117);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.email input {
+    border: none;
+    border-bottom: 3px solid white;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    font-size: 1rem;
+    width: 34rem;
+    padding: 0.5rem 1.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-right: 1rem;
+    transition: 400ms ease-in-out;
+}
+
+.email input::placeholder {
+    color: #fff;
+    font-weight: bold;
+}
+
+.email input:focus {
+    border-bottom: 3px solid red;
+}
+
+.email input:valid {
+    border-bottom: 3px solid rgb(9, 255, 0);
+}
+
+.email div {
+    display: flex;
+}
+
+.email button {
+    position: absolute;
+    bottom: -2.35rem;
+    right: 0;
+    background-color: #fff;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.email button:hover {
+    background-color: rgb(2, 82, 230);
+    color: #fff;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: #fff;
+    letter-spacing: 1px;
+    transform: translateX(-50%);
+}
+@media only screen and (max-width: 768px) {
+    .contact {
+        padding: 7rem 2rem;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .contact-content .columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .col-1 ul, .col-2 ul, .col-3 ul, .email, .btn-email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .email h4 {
+        text-align: center;
+    }
+    .email input {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .email button {
+        display: block;
+        position: unset;
+        margin-top: 1rem;
+    }
+}

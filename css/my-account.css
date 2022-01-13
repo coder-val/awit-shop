@@ -1,0 +1,209 @@
+.account-page {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 10rem 0;
+}
+
+.account-page-content {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content-left {
+    display: block;
+    width: 370px;
+}
+
+.content-left .user {
+    border: 1px solid black;
+    height: 200px;
+    width: 100%;
+    padding: 1rem 0rem 0.5rem 0rem;
+    line-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-left .user-links {
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.user-links ul li {
+    list-style-type: none;
+    line-height: 2rem;
+    display: block;
+    font-weight: bold;
+    
+}
+
+.user-links ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 200ms ease-in-out;
+}
+
+.user-links ul li a:hover {
+    color: #0A75B2;
+}
+
+.content-left img {
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid #D6D6D6;
+    cursor: pointer;
+}
+
+.content-right {
+    border: 1px solid black;
+    width: 100%;
+    padding: 2rem;
+}
+
+.content-right h1{
+    font-size: 2.5rem;
+}
+
+.content-right-header, .display-info {
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.content-right-header {
+    padding-bottom: 1rem;
+    line-height: 3rem;
+}
+
+.display-info {
+    padding: 2rem 0;
+    line-height: 2.5rem;
+}
+
+.display-name {
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.content-right input {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    width: 250px;
+}
+
+.account {
+    padding: 2rem 0 0 0;
+}
+
+.account-desc {
+    line-height: 2.5rem;
+}
+
+.login-email {
+    margin-top: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.login-email span {
+    color: #777777;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+form input {
+    margin-bottom: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form .buttons {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.buttons button {
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    transition: 200ms ease-in-out;
+}
+
+#discard, #update {
+    padding: 0.5rem 0;
+    width: 7rem;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#discard {
+    border: 1px solid #0A75B2;
+    background-color: #fff;
+    color: #0A75B2;
+}
+
+#update {
+    border: 1px solid #0A75B2;
+    background-color: #0A75B2;
+    color: #fff;
+    margin-left: 0.5rem;
+}
+
+#discard:hover {
+    border: 1px solid #649cbd;
+    color: #649cbd;
+}
+
+#update:hover {
+    border: 1px solid #649cbd;
+    background-color: #649cbd;
+}
+
+.dob {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 530px) {
+    .account-page {
+        padding: 7rem 1rem;
+    }
+    .account-page-content {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    form, form label, form .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    form label {
+        flex-direction: column;
+    }
+    .content-left, .content-right, .content-right input, form {
+        width: 100%;
+    }
+    .user-links {
+        display: none;
+    }
+}

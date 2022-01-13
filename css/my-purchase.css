@@ -1,0 +1,116 @@
+.purchase-page {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 10rem 0;
+}
+
+.purchase-page-content {
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content-left {
+    display: block;
+    width: 370px;
+}
+
+.content-left .user {
+    border: 1px solid black;
+    height: 200px;
+    width: 100%;
+    padding: 1rem 0rem 0.5rem 0rem;
+    line-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-left .user-links {
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.user-links ul li {
+    list-style-type: none;
+    line-height: 2rem;
+    display: block;
+    font-weight: bold;
+    
+}
+
+.user-links ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 200ms ease-in-out;
+}
+
+.user-links ul li a:hover {
+    color: #0A75B2;
+}
+
+.content-left img {
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid #D6D6D6;
+    cursor: pointer;
+}
+
+.content-right {
+    border: 1px solid black;
+    width: 100%;
+    padding: 2rem;
+}
+
+.content-right h1{
+    font-size: 2.5rem;
+}
+
+.content-right-header, .display-info {
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.content-right-header {
+    padding-bottom: 1rem;
+    line-height: 3rem;
+}
+
+.display-info {
+    padding: 4rem 0;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.display-info a {
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    transition: 200ms ease-in-out;
+}
+
+.display-info a:hover {
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+
+@media only screen and (max-width: 530px) {
+    .purchase-page {
+        padding: 7rem 1rem;
+    }
+    .purchase-page-content {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content-left, .content-right, .content-right input, form {
+        width: 100%;
+    }
+    .user-links, .content-left {
+        display: none;
+    }
+}

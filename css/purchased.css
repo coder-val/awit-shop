@@ -1,0 +1,42 @@
+.purchased-page {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 2rem 0 0 0;
+}
+
+.thank-you {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    position: relative;
+}
+
+.thank-you img {
+    width: 100%;
+}
+
+#shop-again {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+#shop-again a {
+    color: black;
+    transition: 200ms ease-in-out;
+}
+
+#shop-again a:hover {
+    color: rgb(98, 98, 98);
+    text-decoration: none;
+}
+
+@media only screen and (max-width:425px) {
+    .purchased-page {
+        padding: 3rem 0 0 0;
+    }
+}

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/visitor.css">
+    <link rel="stylesheet" href="./css/single-item.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/modals.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/open-image.css">
+    <title>Awit Shop</title>
+</head>
+<body>
+
+    <!--navbar-->
+
+    <nav>
+
+        <div class="navbar">
+            
+            <div class="title">
+            
+                <h1><a href="./index.html">Awit Shop</a></h1>
+                <p style="font-size: 1.1rem;"><a href="./index.html">it's like shopee, but worse</a></p>
+
+            </div>
+    
+            <div class="links">
+    
+                <ul>
+                    <li id="Shop" onclick="Shop()" class="active"><a href="#shop">Shop</a></li>
+                    <li id="About" onclick="About()"><a href="preview-about.html">About</a></li>
+                    <li id="Faq" onclick="Faq()"><a href="preview-faq.html" id="faq">FAQ</a></li>
+                    <li id="Contact" onclick="Contact()"><a href="#contact">Contact</a></li>
+                </ul>
+    
+            </div>
+    
+            <div class="SUC">
+    
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input id="searchbar" onkeyup="search_item()" type="text" placeholder="Search...">
+                </div>
+                <div class="login-signup">
+                    <h4><a id="signup" href="signup.html">Sign Up</a></h4>
+                    <h4>&nbsp;&nbsp;|&nbsp;&nbsp;</h4>
+                    <h4><a href="login.html">Login</a></h4>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="sidebar">
+        <div class="socials">
+            <a href="##"><i class="fab fa-facebook-f"></i></a>
+            <a href="##"><i class="fab fa-instagram"></i></a>
+            <a href="##"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <!--end navbar-->
+
+    <!--shop page--> 
+
+    <main>
+
+        <!--Shop-->
+
+        <div class="single-item">
+
+            <div class="open-single-item">
+                <div class="modal-single-item-background" onclick="closeSingleItem()">
+                    <div id="open-single-item-image">
+                        <img id="item-image" src="./img/facemask holder.png" alt="">
+                        <!-- <i class="fas fa-times" onclick="modalClose()"></i> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-item-container">
+                <div class="single-item-left">
+                    <img onclick="openSingleItem()" src="./img/facemask holder.png" alt="">
+                </div>
+                <div class="single-item-right">
+                    <h1>Korean Face Mask Holder</h1>
+                    <h5 class="stock">Stock: 99</h5>
+                    <h3><span style="text-decoration: line-through;">₱13.00</span>&nbsp&nbsp&nbsp₱7.00</h3>
+                    <div class="color-pick">
+                        <h5 id="color">Color: </h5>
+
+                        <div class="color purple" onclick="purple3()">
+                            <div id="op" class="outline"></div>
+                        </div>
+
+                        <div class="color green" onclick="green3()">
+                            <div id="ogr" class="outline"></div>
+                        </div>
+                        
+                        <div class="color black" onclick="black3()">
+                            <div id="ob" class="outline"></div>
+                        </div>
+                        
+                        <div class="color yellow" onclick="yellow3()">
+                            <div id="oy" class="outline"></div>
+                        </div>
+                        
+                        <div class="color blue" onclick="blue3()">
+                            <div id="obl" class="outline"></div>
+                        </div>
+                        
+                        <div class="color white" onclick="white3()">
+                            <div id="ow" class="outline"></div>
+                        </div>
+                        
+                        <div class="color red" onclick="red3()">
+                            <div id="or" class="outline"></div>
+                        </div>
+
+                        <div class="color orange" onclick="orange3()">
+                            <div id="oo" class="outline"></div>
+                        </div>
+                    </div>
+
+                    <div class="quantity">
+                        <h5>Quantity</h5>
+                        <input type="number" name="" id="" value="1">
+                    </div>
+                    <div class="button-group">
+                        <div class="btn-two">
+                            <button class="btn-atc" onclick="location.href='login.html'">Add to Cart </button>
+                            <button class="btn-heart">
+                                <i id="far-heart" class="far fa-heart"  onclick="addFavorite()"></i>
+                                <i id="fas-heart" class="fas fa-heart" onclick="removeFavorite()"></i></button>
+                        </div>
+                        <button class="btn-buy"><a href="login.html">Buy Now</a></button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="single-item-description">
+                <img src="./img/facemask holder.png" alt="">
+                <p>I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis facere doloremque similique asperiores excepturi, sint ipsum et dolore, illo ut cupiditate repellendus quasi impedit quaerat explicabo eos vel eligendi doloribus.</p>
+            </div>
+
+        </div>
+
+        <div id="shop" class="shop">
+            <div id="list" class="cards">
+                <div class="card" onmouseover="showItem1()" onmouseout="hideItem1()">
+                    <div class="image">
+                        <h4>Sale</h4>
+                        <a href="preview-item1.html"><img src="./img/surgical mask.png" alt=""></a>
+                        <div id="Item1" class="show-quickview" onclick="modalOpen1()"><h5>Quick View</h5></div>
+                    </div>
+                    <div class="title">
+                        <a href="preview-item1.html"><h4 class="item-title">《BiuBiu》Face Masks N88 Surgical 3ply 50Pcs</h4></a>
+                    </div>
+                    <div class="price">
+                        <h4><span style="text-decoration: line-through;">₱299.00</span>&nbsp&nbsp&nbsp₱30.00</h4>
+                    </div>
+                    <div id="btn1" class="atc" onclick="modalOpen1()">
+                        <h5>Add to Cart</h5>
+                    </div>
+                </div>
+
+                <div class="card"  onmouseover="showItem2()" onmouseout="hideItem2()">
+                    <div class="image">
+                        <h4>Top Sellers</h4>
+                        <a href="preview-item2.html"><img src="./img/KF94 Mask.png" alt=""></a>
+                        <div id="Item2" class="show-quickview" onclick="modalOpen2()"><h5>Quick View</h5></div>
+                    </div>
+                    <div class="title">
+                        <a href="preview-item2.html"><h4 class="item-title">KF94 Face Mask 10PCS (White, Black, Gray)</h4></a>
+                    </div>
+                    <div class="price">
+                        <h4>₱15.00</h4>
+                    </div>
+                    <div id="btn2"  class="atc" onclick="modalOpen2()">
+                        <h5>Add to Cart</h5>
+                    </div>
+                </div>
+
+                <div class="card"  onmouseover="showItem3()" onmouseout="hideItem3()">
+                    <div class="image">
+                        <h4>Top Sellers</h4>
+                        <a href="preview-item3.html"><img src="./img/facemask holder.png" alt=""></a>
+                        <div id="Item3" class="show-quickview" onclick="modalOpen3()"><h5>Quick View</h5></div>
+                    </div>
+                    <div class="title">
+                        <a href="preview-item3.html"><h4 class="item-title">Korean Face Mask Holder</h4></a>
+                    </div>
+                    <div class="price">
+                        <h4><span style="text-decoration: line-through;">₱13.00</span>&nbsp&nbsp&nbsp₱7.00</h4>
+                    </div>
+                    <div id="btn3" class="atc" onclick="modalOpen3()">
+                        <h5>Add to Cart</h5>
+                    </div>
+                </div>
+
+                <div class="card"  onmouseover="showItem4()" onmouseout="hideItem4()">
+                    <div class="image">
+                        <h4>New Arrival</h4>
+                        <a href="preview-item4.html"><img src="./img/squidgame costume mask.png" alt=""></a>
+                        <div id="Item4" class="show-quickview" onclick="modalOpen4()"><h5>Quick View</h5></div>
+                    </div>
+                    <div class="title">
+                        <a href="preview-item4.html"><h4 class="item-title">Squid Game Costume Mask</h4></a>
+                    </div>
+                    <div class="price">
+                        <h4><span style="text-decoration: line-through;">₱399.00</span>&nbsp&nbsp&nbsp₱99.00</h4>
+                    </div>
+                    <div id="btn4" class="atc" onclick="modalOpen4()">
+                        <h5>Add to Cart</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="no-data" class="no-data">
+                <img src="./img/no-result.png" alt="">
+                <h3>No results found.<br>Try different or more general keywords</h3>
+            </div>
+        </div>
+
+        <!--end Shop-->
+
+    </main>
+
+    <!--MODALS-->
+
+    <section>
+        <div class="modals">
+
+            <div class="modal-background" onclick="modalClose()"></div>
+
+            <div id="modal-item1" class="modal">
+
+                <i class="fas fa-times" onclick="modalClose()"></i>
+
+                <div class="modal-left">
+                    <img src="./img/surgical mask.png" alt="">
+                </div>
+
+                <div class="modal-right">
+                    <h2>《BiuBiu》Face Masks N88 Surgical 3ply 50Pcs</h2>
+                    <h3><span style="text-decoration: line-through;">₱299.00</span>&nbsp&nbsp&nbsp₱30.00</h3>
+                    <h5 class="stock">Stock: 99</h5>
+
+                    <div class="color-pick">
+                        <h5>Color: </h5>
+
+                        <div class="color light-blue">
+                            <div class="outline"></div>
+                        </div>
+
+                        <div class="color black">
+                            <div class="outline"></div>
+                        </div>
+                    </div>
+
+                    <div class="quantity">
+                        <h5>Quantity</h5>
+                        <input type="number" name="" id="" value="1">
+                    </div>
+
+                    <button onclick="openCartModel()">Add to Cart </button>
+
+                    <h5 class="more-details"><a href="item1.html">View More Details</a></h5>
+                </div>
+
+            </div>
+
+            <div id="modal-item2" class="modal">
+
+                <i class="fas fa-times" onclick="modalClose()"></i>
+
+                <div class="modal-left">
+                    <img src="./img/KF94 Mask.png" alt="">
+                </div>
+
+                <div class="modal-right">
+                    <h2>KF94 Face Mask 10PCS (White, Black, Gray)</h2>
+                    <h3>₱15.00</h3>
+                    <h5 class="stock">Stock: 99</h5>
+
+                    <div class="color-pick">
+                        <h5>Color: </h5>
+
+                        <div class="color white">
+                            <div class="outline"></div>
+                        </div>
+
+                        <div class="color black">
+                            <div class="outline"></div>
+                        </div>
+
+                        <div class="color gray">
+                            <div class="outline"></div>
+                        </div>
+                    </div>
+
+                    <div class="quantity">
+                        <h5>Quantity</h5>
+                        <input type="number" name="" id="" value="1">
+                    </div>
+
+                    <button onclick="openCartModel()">Add to Cart </button>
+
+                    <h5 class="more-details"><a href="item2.html">View More Details</a></h5>
+                </div>
+
+            </div>
+
+            <div id="modal-item3" class="modal">
+
+                <i class="fas fa-times" onclick="modalClose()"></i>
+
+                <div class="modal-left">
+                    <img src="./img/facemask holder.png" alt="">
+                </div>
+
+                <div class="modal-right">
+                    <h2>Korean Face Mask Holder</h2>
+                    <h3><span style="text-decoration: line-through;">₱13.00</span>&nbsp&nbsp&nbsp₱7.00</h3>
+                    <h5 class="stock">Stock: 99</h5>
+
+                    <div class="color-pick">
+                        <h5>Color: </h5>
+
+                        <div class="color purple">
+                            <div class="outline"></div>
+                        </div>
+
+                        <div class="color green">
+                            <div class="outline"></div>
+                        </div>
+                        
+                        <div class="color black">
+                            <div class="outline"></div>
+                        </div>
+                        
+                        <div class="color yellow">
+                            <div class="outline"></div>
+                        </div>
+                        
+                        <div class="color blue">
+                            <div class="outline"></div>
+                        </div>
+                        
+                        <div class="color white">
+                            <div class="outline"></div>
+                        </div>
+                        
+                        <div class="color red">
+                            <div class="outline"></div>
+                        </div>
+
+                        <div class="color orange">
+                            <div class="outline"></div>
+                        </div>
+                    </div>
+
+                    <div class="quantity">
+                        <h5>Quantity</h5>
+                        <input type="number" name="" id="" value="1">
+                    </div>
+
+                    <button onclick="openCartModel()">Add to Cart </button>
+
+                    <h5 class="more-details"><a href="item3.html">View More Details</a></h5>
+                </div>
+
+            </div>
+
+            <div id="modal-item4" class="modal">
+
+                <i class="fas fa-times" onclick="modalClose()"></i>
+
+                <div class="modal-left">
+                    <img src="./img/squidgame costume mask.png" alt="">
+                </div>
+
+                <div class="modal-right">
+                    <h2>Squid Game Costume Mask</h2>
+                    <h3><span style="text-decoration: line-through;">₱399.00</span>&nbsp&nbsp&nbsp₱99.00</h3>
+                    <h5 class="stock">Stock: 99</h5>
+
+                    <div class="color-pick">
+                        <h5>Item: </h5>
+
+                        <div class="color">
+                            <div class="item-pick">1</div>
+                            <div class="outline"></div>
+                        </div>
+
+                        <div class="color">
+                            <div class="item-pick">2</div>
+                            <div class="outline"></div>
+                        </div>
+                        
+                        <div class="color">
+                            <div class="item-pick">3</div>
+                            <div class="outline"></div>
+                        </div>
+                        
+                        <div class="color">
+                            <div class="item-pick">4</div>
+                            <div class="outline"></div>
+                        </div>
+                    </div>
+
+                    <div class="quantity">
+                        <h5>Quantity</h5>
+                        <input type="number" name="" id="" value="1">
+                    </div>
+
+                    <button onclick="openCartModel()">Add to Cart </button>
+
+                    <h5 class="more-details"><a href="item4.html">View More Details</a></h5>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--end MODALS-->
+
+    <!--end shop page--> 
+
+    <!--contact page-->
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contact</h2>
+            <div class="columns">
+                <div class="col-1">
+                    <ul>
+                        <li><a href="##">Shipping & Returns</a></li>
+                        <li><a href="##">Store Policy</a></li>
+                        <li><a href="##">Payment Methods</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li><a href="##">Contact</a></li>
+                        <li><a href="##">Phone: +639614502534</a></li>
+                        <li><a href="##">Programmerist.14@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li><a href="##">Facebook</a></li>
+                        <li><a href="##">Instagram</a></li>
+                        <li><a href="##">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="email">
+                <h4>Join our mailing list and never miss an update<br><br></h4>
+                <label for="email">Email</label>
+                <div>
+                    <input type="email" name="email" id="" placeholder="Enter your email here*" required>
+                    <button type="submit">Subscribe Now</button>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <footer>
+            <p>© 2022 by Awit Group.</p>
+        </footer>
+    </section>
+
+    <!--end contact page-->
+
+    <!--scripts-->
+
+    <script src="https://kit.fontawesome.com/629285ca24.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/search.js"></script>
+    <script src="./script/open-image.js"></script>
+    <script src="./script/cart-right.js"></script>
+    <script src="./script/color-pick.js"></script>
+
+    <!--end scripts-->
+
+</body>
+</html>
