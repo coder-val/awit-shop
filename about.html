@@ -7,10 +7,8 @@
     <link rel="icon" href="./img/icon.png">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/cart-right.css">
-    <link rel="stylesheet" href="./css/checkout.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/contact.css">
-
     <title>Awit Shop</title>
 </head>
 <body>
@@ -78,13 +76,13 @@
     
                     <ul>
                         <li><a id="Shopp" onclick="Shopp()"  href="#shop">Shop</a></li>
-                        <li><a id="Aboutt" onclick="Aboutt()" href="#about">About</a></li>
-                        <li><a id="Faqq" onclick="Faqq()" href="#FAQ" >FAQ</a></li>
+                        <li><a id="Aboutt" onclick="Aboutt()" href="about.html">About</a></li>
+                        <li><a id="Faqq" onclick="Faqq()" href="faq.html" >FAQ</a></li>
                         <li><a id="Contactt" onclick="Contactt()" href="#contact">Contact</a></li>
                     </ul>
         
                 </div>
-            </divj>
+            </div>
 
         </div>
 
@@ -263,145 +261,16 @@
 
     <!--end shop page--> 
 
-    <!--cart page-->
+    <!--about page-->
 
-    <section id="cart-page" class="cart-page">
-
-        <div class="delivery-address">
-            <div class="cart-header">
-                <h3><i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>Delivery Address</h3>
-            </div>
-            <div class="delivery-content">
-                <div class="name">
-                    <h4>Val Melbin C. Cabitac<br>09614502534</h4>
-                </div>
-                <div class="address">
-                    <h4>Villa, Santa Teresita, Cagayan Valley<br>Philippines, 3512</h4>
-                </div>
-            </div>
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About</h2>
+            <p>Awit Shop is one of the recent e-commerce platform to ever exist. It is a platform tailored in providing customers with an easy, enjoyable and very convenient online shopping experience. Awit Shop ensures customers are entertained even during the pandemic.</p>
         </div>
-
-        <div class="cart-page-content">
-
-            <div class="cart-content">
-                <div class="cart-header">
-                    <h3><i class="fas fa-boxes" style="margin-right: 0.5rem;"></i>Products Ordered</h3>
-                </div>
-                
-                <div class="cart-content-cards">
-                    <div id="item1" onmouseover="showX1()" onmouseout="hideX1()" class="cart-content-card">
-                        <div class="card-img">
-                            <img src="./img/surgical mask.png" alt="">
-                        </div>
-                        <div class="card-desc">
-                            <h4>《BiuBiu》Face Masks N88 Surgical 3ply 50Pcs</h4>
-                            <h5><span style="text-decoration: line-through; color: rgb(100, 100, 100);">₱299.00</span>&nbsp&nbsp&nbsp₱30.00<br>Color: Blue</h5>
-                            <div class="card-right-quantity">
-                                <input type="number" name="" id="" value="1">
-                            </div>
-                        </div>
-                        <div class="card-pricetag">
-                            <h4>₱30.00</h4>
-                            <i id="x1" onclick="itemRemove1()" class="fas fa-times"></i>
-                        </div>
-                    </div>
-
-                    <div id="item2" onmouseover="showX2()" onmouseout="hideX2()" class="cart-content-card">
-                        <div class="card-img">
-                            <img src="./img/KF94 Mask.png" alt="">
-                        </div>
-                        <div class="card-desc">
-                            <h4>KF94 Face Mask 10PCS</h4>
-                            <h5>₱15.00<br>Color: White</h5>
-                            <div class="card-right-quantity">
-                                <input type="number" name="" id="" value="2">
-                            </div>
-                        </div>
-                        <div class="card-pricetag">
-                            <h4>₱30.00</h4>
-                            <i id="x2" onclick="itemRemove2()" class="fas fa-times"></i>
-                        </div>
-                    </div>
-
-                    <div id="item3" onmouseover="showX3()" onmouseout="hideX3()" class="cart-content-card">
-                        <div class="card-img">
-                            <img src="./img/facemask holder.png" alt="">
-                        </div>
-                        <div class="card-desc">
-                            <h4>Korean Face Mask Holder</h4>
-                            <h5><span style="text-decoration: line-through; color: rgb(100, 100, 100);">₱13.00</span>&nbsp&nbsp&nbsp₱7.00<br>Color: Black</h5>
-                            <div class="card-right-quantity">
-                                <input type="number" name="" id="" value="8">
-                            </div>
-                        </div>
-                        <div class="card-pricetag">
-                            <h4>₱56.00</h4>
-                            <i id="x3" onclick="itemRemove3()" class="fas fa-times"></i>
-                        </div>
-                    </div>
-
-                    <div id="item4" onmouseover="showX4()"  onmouseout="hideX4()" class="cart-content-card">
-                        <div class="card-img">
-                            <img src="./img/squidgame costume mask.png" alt="">
-                        </div>
-                        <div class="card-desc">
-                            <h4>Squid Game Costume Mask</h4>
-                            <h5><span style="text-decoration: line-through; color: rgb(100, 100, 100);">₱399.00</span>&nbsp&nbsp&nbsp₱99.00<br>Item: 1</h5>
-                            <div class="card-right-quantity">
-                                <input type="number" name="" id="" value="3">
-                            </div>
-                        </div>
-                        <div class="card-pricetag">
-                            <h4>₱297.00</h4>
-                            <i id="x4" onclick="itemRemove4()" class="fas fa-times"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="cart-summary">
-            <div class="summary-header">
-                <h3><i class="fas fa-receipt" style="margin-right: 0.5rem;"></i>Payment Method</h3>
-            </div>
-            <div class="summary-container">
-                <div class="left">
-                    <div id="gcash" onmouseover="gcashHover()" onmouseout="gcashOut()" onclick="gcashClick()">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h4>GCash</h4>
-                    </div>
-                    <div id="cod" onmouseover="codHover()" onmouseout="codOut()" onclick="codClick()">
-                        <i class="fas fa-wallet"></i>
-                        <h4>Cash on Delivery</h4>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="summary-content">
-                        <div class="subtotal">
-                            <h4>Subtotal</h4>
-                            <h4 style="text-align: right;">₱413.00</h4>
-                        </div>
-                        <div class="shipping">
-                            <h4>Shipping<br><span style="text-decoration: underline; line-height: 2.5rem; font-size: 0.8rem;">North Luzon, Standard Local</span></h4>
-                            <h4 style="text-align: right;">FREE</h4>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="summary-total">
-                <h3>Total</h3>
-                <h3 style="text-align: right;">₱413.00</h3>
-            </div>
-            <div id="btn-placeorder">
-                <a href="purchased.html"><button>Place Order</button></a>
-            </div>
-        </div>
-
     </section>
 
-    <!--end cart page-->
+    <!--end about page-->
 
     <!--faq page-->
 
@@ -459,9 +328,7 @@
 
     <script src="https://kit.fontawesome.com/629285ca24.js" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
-    <!-- <script src="./script/cart.js"></script> -->
     <script src="./script/cart-right.js"></script>
-    <script src="./script/checkout.js"></script>
 
     <!--end scripts-->
 
